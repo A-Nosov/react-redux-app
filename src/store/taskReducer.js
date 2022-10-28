@@ -19,6 +19,7 @@ export function taskReducer(state = [], action) {
                 (el) => el.id === action.payload.id
             )
             newArray.splice(elementIndex, 1)
+            console.log(newArray)
             return newArray
         }
 

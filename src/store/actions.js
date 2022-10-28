@@ -15,6 +15,6 @@ export function taskCompleted(id) {
 export function taskDeleted(id) {
     return {
         type: actionTypes.taskDeleted,
-        payload: id
+        payload: { id }
     }
 }
